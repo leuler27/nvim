@@ -140,12 +140,12 @@ map('n', 'g*', "g*<Cmd>lua require('hlslens').start()<CR>", { silent = false })
 map('n', 'g#', "g#<Cmd>lua require('hlslens').start()<CR>", { silent = false })
 
 -- nvim-tree.lua
--- map("n", "<C-b>", ":NvimTreeToggle<CR>", { desc = "toggle nvimtree" })
--- map("n", "<Leader>hf", ":NvimTreeFindFile<CR>", { desc = "find file nvimtree" })
+map("n", "<Leader>b", ":NvimTreeToggle<CR>", { desc = "toggle nvimtree" })
+map("n", "<Leader>bf", ":NvimTreeFindFile<CR>", { desc = "find file nvimtree" })
 
 -- neo-tree.nvim
-map('n', '<C-b>', '<Cmd>Neotree toggle<CR>', { desc = 'toggle nvimtree' })
-map('n', '<Leader>hf', '<Cmd>Neotree reveal<CR>', { desc = 'toggle nvimtree' })
+--map('n', '<C-b>', '<Cmd>Neotree toggle<CR>', { desc = 'toggle nvimtree' })
+--map('n', '<Leader>hf', '<Cmd>Neotree reveal<CR>', { desc = 'toggle nvimtree' })
 
 -- telescope.nvim
 -- map("n", "<Leader>ff", function()
@@ -191,10 +191,10 @@ map('n', 'gJ', ':TSJJoin<CR>')
 map('n', 'f', '<Cmd>HopChar2<CR>')
 
 -- nvim-spider
-map({ 'n', 'o', 'x' }, 'w', "<Cmd>lua require('spider').motion('w')<CR>", { desc = 'Spider-w' })
-map({ 'n', 'o', 'x' }, 'e', "<Cmd>lua require('spider').motion('e')<CR>", { desc = 'Spider-e' })
-map({ 'n', 'o', 'x' }, 'b', "<Cmd>lua require('spider').motion('b')<CR>", { desc = 'Spider-b' })
-map({ 'n', 'o', 'x' }, 'ge', "<Cmd>lua require('spider').motion('ge')<CR>", { desc = 'Spider-ge' })
+-- map({ 'n', 'o', 'x' }, 'w', "<Cmd>lua require('spider').motion('w')<CR>", { desc = 'Spider-w' })
+-- map({ 'n', 'o', 'x' }, 'e', "<Cmd>lua require('spider').motion('e')<CR>", { desc = 'Spider-e' })
+-- map({ 'n', 'o', 'x' }, 'b', "<Cmd>lua require('spider').motion('b')<CR>", { desc = 'Spider-b' })
+-- map({ 'n', 'o', 'x' }, 'ge', "<Cmd>lua require('spider').motion('ge')<CR>", { desc = 'Spider-ge' })
 
 -- nvim-dap
 map('n', '<Leader>db', function()
