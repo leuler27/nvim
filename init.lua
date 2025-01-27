@@ -115,9 +115,6 @@ vim.opt.scrolloff = 10
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
-require 'utils.utils'
-require 'core.keymappings'
-
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
@@ -196,7 +193,6 @@ require('lazy').setup({
   -- Use `opts = {}` to force a plugin to be loaded.
   --
 
-  require 'core.nvim-tree'
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
   --    require('gitsigns').setup({ ... })
@@ -866,10 +862,10 @@ require('lazy').setup({
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
-
-  require 'utils.utils',
-  require 'core.nvim-tree',
-  require 'core.keymappings'
+  -- require 'utils.utils',
+  --
+  -- require 'core.nvim-tree', 
+  -- require 'core.keymappings',
 
   -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
   --
